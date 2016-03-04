@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta author="Christian Alos, Josue Huelmo, Carlos Jimenez" />
+
+	<title>FlexBox by CAS</title>
+	<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0" />
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+<body>
+  <!-- contenedor principal -->
+  <div id="conthead">
+    <!-- contenedor secundario -->
+   <header>
+     <div id="logo" onClick="window.location='../Inicio/index.html'"> 
+       <img src="img/logo.png" alt="logo"/>
+     </div>
+     <!-- nuevo search bar -->
+     
+     <form id="searchbox" action="">
+        <input id="submit2"  type="button" value="{">
+        <input id="search" type="text" placeholder="Type here">
+        <input onClick="window.location='../BusquedaRealizada/index.html'" id="submit" type="button" value="L">
+     </form>
+    <div onclick="displaymenu(this);" id="divHam" class="hamburguesa">&#178</div>
+    <ul class="ca-menu" id="menu">
+      <li>
+        <span class="ca-text">Perfil</span>
+        <span href="#">
+          <a class="ca-icon">U</a>
+        </span>
+      </li>
+      <li>
+        <span class="ca-text">Playlist</span>
+        <span href="#">
+          <a class="ca-icon">F</a>
+        </span>
+      </li>
+      <li>
+        <span class="ca-text">Favoritos</span>
+        <span href="#">
+          <a class="ca-icon">N</a>
+        </span>
+      </li>
+      <li onClick="window.location='../Login/index.html'">
+        <span class="ca-text">Logout</span>
+        <span href="#">
+          <a class="ca-icon">X</a>
+        </span>
+      </li>
+      
+    </ul>
+   </header>
+    <!-- contenedor secundario cuerpo pagina -->
+	<div id="contenedorPal">
+   <!-- contenedor terciario -->
+		<article>
+      <p class="title">One Piece - 445</p>
+			<div class="contVideo">
+        <video class="reproductor" controls>
+          <source src="videos/OnePiece_001.mp4" type="video/mp4"/>
+        </video>
+			</div>
+			
+		</article>
+   <!-- contenedor terciario -->
+		<section>
+
+
+			 <contenedor class="comentario">
+				    <ul class="serie-menu">
+            <li onclick="changefocus(this);" class="serie-item serie-active">Informacion</li>
+            <li onclick="changefocus(this);" class="serie-item">Capitulos</li>
+            <li onclick="changefocus(this);" class="serie-item">Criticas</li>
+        </ul>
+
+          
+
+          <div class="content-vision">
+            <div class="description-vison active" style="display:none;">
+  				    <div class="cartel"><span class="nota">9.3</span><img src="img/onepiece.jpg"/></div>
+              <div class="info">
+                <div class="imgPersonajes">
+                  <img src="img/imagenesPer/b.jpg" alt="brad"/>
+                  <img src="img/imagenesPer/ba.jpg" alt="ba"/>
+                  <img src="img/imagenesPer/chopper.jpg" alt="brad"/>
+                  <img src="img/imagenesPer/fran.jpg" alt="fran"/>
+                  <img src="img/imagenesPer/luf.jpg" alt="luf"/>
+                  <img src="img/imagenesPer/sanji.jpg" alt="san"/>
+                </div>
+                <div class="infoPar">
+                Dorry, gravemente herido por la explosión de cerveza, culpa a los Sombrero de Paja (en realidad fueron los agentes oficiales de Baroque Works). Luffy se enfurece de que alguien utilice un truco tan cobarde, saboteando el honorable duelo de los gigantes.
+                </div>
+              </div>
+
+            </div>
+            <div class="caps-vision" style="display:none;">
+              <p>001 - ¡Soy Luffy! ¡El hombre que se convertirá en el Rey de los Piratas!</p>
+              <p>002 - ¡Aparece el gran espadachín! El cazador de piratas, Roronoa Zoro</p>
+              <p>003 - ¡Morgan vs. Luffy! ¿¿Quién es esa guapa muchacha??</p>
+              <p>004 - ¡El pasado de Luffy! ¡Aparece el pelirrojo Shanks! </p>
+              <p>005 - ¡Teme el misterioso poder! ¡El capitán payaso Buggy!</p>
+              <p>006 - ¡Situación desesperada! ¡Mohji el domador de fieras vs. Luffy! </p>
+              <p>007 - ¡Gran duelo! ¡Zoro el espadachín vs. Cabaji el acróbata!</p>
+              <p>008 - ¿Quién ganara? ¡Ajuste de cuentas entre los poderes de los akuma no mi!</p>
+              <p>009 - ¿Honorable mentiroso? Capitán Usopp</p>
+              <p>010 - ¡El hombre más raro del mundo! Jango el hipnotizador</p>
+              <p>011 - ¡Revelando la conspiración! El pirata enmascarado, Captain Kuro</p>
+              <p>012 - ¡Batalla! ¡Los piratas Kuroneko, batalla en la cuesta!</p>
+              <p>013 - ¡El dúo aterrador! Zoro contra los hermanos Nyaban</p>
+              <p>014 - ¡Renacimiento de Luffy! La señorita Kaya al borde la vida y la muerte </p>
+              <p>015 - ¡Derrotar a Kuro! ¡La determinación entre lágrimas de Usopp!</p>
+              <p>016 - ¡Proteger a Kaya! ¡Los piratas de Usopp entra en acción! </p>
+              <p>017 - ¡Completamente furioso! Kuro vs. Luffy, ¡Última batalla!</p>
+              <p>018 - ¡Eres un bicho raro! Gaimon y sus fantásticos amigos</p>
+              <p>019 - ¡El pasado de las tres espadas! ¡La promesa entre Zoro y Kuina! </p>
+              <p>020 - ¡El famoso cocinero! Sanji del restaurante flotante </p>
+              <p>021 - ¡Un huésped inesperado! ¡La comida de Sanji y la gracia de Gin!</p>
+              <p>022 - La flota pirata más grande ¡Capitán Don Krieg! </p>
+              <p>023 - ¡Proteger el Baratie! ¡El gran pirata, Zeff Pies Rojos! </p>
+              <p>024 - ¡Mihawk ojos de halcón! El espadachín Zoro cae al mar </p>
+              <p>025 - ¡Emerger la magnífica habilidad con los pies! ¡Sanji vs. Pearl Muro de Hierro! </p>
+              <ul class="listacaps">
+                <li id="pag1" class="pagina act">1</li>
+                <li id="pag2" class="pagina">2</li>
+                <li id="pag3" class="pagina">3</li>
+              </ul>
+            </div>
+            <div class="comentarios-vision" style="display:none;">
+              <div class="post">
+                <img src="img/avatar.jpg">
+                <div>
+                  <p class="nick">Podgas</p>
+                  <span class="post-text">Esta serie es increible, ojala continue mucho tiempo!!</span>
+                </div>
+              </div>
+              <div class="post">
+                <img src="img/avatar.jpg">
+                <div>
+                  <p class="nick">Christian</p>
+                  <span class="post-text">Esta serie es increible, ojala continue mucho tiempo!!</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <script>
+            function changefocus(object){
+              if($(object).hasClass("serie-active")){
+
+              }else{
+                $(".serie-active").removeClass("serie-active");
+                $(object).addClass("serie-active");
+                changecontent(object);
+              }
+              
+              
+            }
+            function changecontent(object){
+              if(jQuery(object).is( ":contains('Informacion')" ) ){
+                jQuery(".active").removeClass("active");
+                jQuery(".description-vison").addClass("active")
+
+              }
+              if(jQuery(object).is( ":contains('Capitulos')" ) ){
+                jQuery(".active").removeClass("active");
+                jQuery(".caps-vision").addClass("active")
+
+              }
+              if(jQuery(object).is( ":contains('Criticas')" ) ){
+                jQuery(".active").removeClass("active");
+                jQuery(".comentarios-vision").addClass("active")
+
+              }
+            }
+
+          </script> 
+
+    </contenedor>
+    <contenedor class="previews">
+				  <h2>Recomendada</h2>
+      <div class="situ">
+        <img  class="recom" src="img/del_reves.jpg" alt="delreves"/>
+        <img  class="recom" src="img/breakingbad.jpg" alt="breaking"/>
+      </div>
+			</contenedor>
+		</section>
+
+	</div>
+   <!-- contenedor secundario -->
+    <footer>
+      <div id="foot"> 
+        <p>Desarrollado por <a href="https://frontal.ies-sabadell.cat/cicles-moodle/course/view.php?id=45">aloschristian@gmail.com - josupod@gmail.com</a></p>
+      </div>
+      <enlaces class="enlaz">
+        <a href="https://es.wikipedia.org/wiki/One_Piece"><img src="img/twitter.png" alt="twitter"/></a>
+        <a href="https://es-es.facebook.com/"><img src="img/facebook.png" alt="facebook"/></a> 
+        <a href="https://twitter.com/?lang=es"><img src="img/YouTube_logo.png" alt="YouTube"/></a> 
+        
+      </enlaces>
+
+      
+   </footer>
+  </div>
+</body>
+</html>

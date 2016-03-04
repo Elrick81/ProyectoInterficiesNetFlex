@@ -1,0 +1,600 @@
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('websymbols/websymbols-regular-webfont.eot');
+    src: url('websymbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('websymbols/websymbols-regular-webfont.woff') format('woff'),
+         url('websymbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('websymbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+  margin:0;
+  background:#1c1c1f;
+  background-image: url("../img/fons.png");
+  font-family: 'Terminal Dosis', Arial, sans-serif;
+  background-attachment: fixed;
+
+  
+}
+/*configuración para footer y header
+ será en un principio la misma*/
+header{
+  background: #212124;
+  overflow: hidden;
+  border-bottom: 2px solid #2C70C4;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  line-height: 59px;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+footer{line-height:25px}
+
+h1{margin:0}
+
+
+/*flexbox que corresponde a footer como padre*/
+footer{
+  width: 100%;
+  height: 75px;
+
+  display:flex;
+
+  flex-direction: row;
+  flex-flow: row wrap;
+
+  justify-content: space-between;
+  align-items: center;
+}
+/*elemento hijo del header*/
+header div{
+  font-size: 40px;
+  color: azure;
+  flex-basis: 1;
+  display: flex;
+  order: 1;
+  
+}
+/*elemento hijo del footer*/
+footer div{
+  color: aliceblue;
+  margin-right: 40px;
+  justify-content: center;
+  flex-basis: 1;
+  display: flex;
+  
+  order: 1;
+}
+/*elemento hijo del header*/
+header .ca-menu{
+  flex-basis: 2;
+  margin-right: 5px;
+  order: 1;
+  padding: 0px;
+}
+/*elemento hijo del footer*/
+footer enlacess{
+  flex-basis: 2;
+  margin-right: 10px;
+  order: 0;
+  
+}
+
+/*imagenes botones footer*/
+footer enlaces a img{
+  height: 70px;
+  width: 100px;
+  
+}
+/*fotter logos*/
+.enlaz{
+  padding: 25px;
+
+}
+/*reflejos de los iconos de las imagenes*/
+.enlaz img{
+  width: 50px;
+  height: 50px;
+  -webkit-box-reflect: below 4px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(.5, transparent), to(white));
+}
+/*Bordes*/
+.contVideo{
+  margin:0 !important;
+}
+/*tamaño del logo 
+  copiar tag en las resoluciones si es
+necesario variar el tamaño*/
+#logo img {
+
+    height: 64px;
+    width: 130px;
+}
+/*texo que acompaña al logo 
+  titulo*/
+#logo p{
+  font-family: Comic Sans, Comic Sans MS, cursive;
+  margin:auto;
+
+}
+
+#conthead{
+
+  display:flex;
+
+  flex-direction:column;
+}
+/*Busqueda por internet para la adaptacion de los navegadores principales
+  safari, chrome, firefox, internet Explorer, opera...*/
+#contenedorPal{
+  display:flex;
+  flex-direction:row wrap;
+  text-align: center;
+  padding-top: 60px;
+
+  
+}
+#contenedorPal article,#contenedorPal section{
+
+  display:flex;
+  flex-grow:1;
+}
+#contenedorPal article contenedor,#contenedorPal section contenedor,#contenedorPal article div,#contenedorPal section div{
+  color:#fdfdfd;
+
+  flex-grow:1;
+  margin:10px;
+  padding:5px;
+
+}
+.peliculaSem{
+  width: 80%;
+  min-width: 50%;
+  padding: 8px;
+    border: 12px rgba(255, 250, 77, 0.12) solid;
+}
+.contImg{
+    width: 200px;
+    height: 200px;
+    border: 5px rgba(44, 122, 188, 0.27) solid;
+    padding: 6px;
+    transition: all 0.5s;
+}
+.mejoresPeliculas{
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.mejores{
+  text-align: center;
+}
+.contImg2{
+  padding: 10px;
+  width: 225px;
+  height: 280px;
+  box-sizing: border-box;
+  transition:all 0.5s;
+    
+}
+h2{
+  padding: 10px;
+  color: white;
+  border-bottom: 4px solid rgba(255, 255, 255, 0.11);
+}
+/*search bar*/
+#searchbox{
+    width: 400px;
+    height: 35px;
+    padding: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    order: 1;
+}
+
+
+#search {
+    padding: 5px 0 4px 8px;
+    height: 20px;
+    width: 71%;
+    background: #E0E0E0;
+    color: #353535;
+    margin: 1px 0 0px 0;
+    transition:all 0.4s;          
+}
+
+
+#submit2{
+    
+    background-color: #5A5A5A;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    height: 35px;
+    width: 10%;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #212124;
+    text-shadow: 0 1px 0 rgb(154, 154, 154);
+    font-family: 'WebSymbolsRegular', cursive;
+    border: 1px solid #212121;
+    transition: all 0.4s;
+}
+
+#submit{       
+    background-color: #2C70C4;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 35px;
+    width: 10%;
+    cursor: pointer;
+    font: bold 14px Arial, Helvetica;
+    color: #212124;
+    text-shadow: 0 1px 0 rgb(87, 208, 255);
+    font-family: 'WebSymbolsRegular', cursive;
+    border: 1px solid rgba(33, 33, 36, 0.57);
+    transition: all 0.4s;
+}
+
+#submit:hover {       
+
+  background-color: #235FAB;
+  text-shadow: 0 1px 0 rgb(96, 138, 154);
+}   
+#submit2:hover {       
+    background-color: #484848;
+} 
+
+#search:focus{
+  background-color:white;
+}
+
+
+/*fin search*/
+#contenedorPal article contenedor h2,#contenedorPal section contenedor h2,#contenedorPal article div h2,#contenedorPal section div h2{margin:0}
+#contenedorPal article contenedor p,#contenedorPal section contenedor img,#contenedorPal article div p,#contenedorPal section div p{margin:5px 0}
+
+#contenedorPal article{
+
+  flex-direction:row;
+  width:50%;
+}
+#contenedorPal section{
+
+  flex-direction:row;
+  width:50%;
+}
+.comentario{
+  width:70%;
+  margin:0 !important;
+}
+.previews{
+  width:30%;
+}
+
+
+@media screen and (max-width: 1280px) and (min-width: 1272px){
+  #contenedorPal section{
+    -moz-flex-direction:column;
+    flex-direction:column;
+    
+  }
+}
+.hamburguesa{
+  display: none !important;
+  cursor:pointer;
+}
+/*resto pantallas*/
+/*
+@media screen and (max-width: 1000px) and (min-width: 640px){
+  #contenedorPal section{
+    -moz-flex-direction:column;
+    flex-direction:column;
+    
+  }
+}
+*/
+/*tablet*/
+/*posicionamiento en columnas cuando wrap is true*/
+@media screen and (max-width: 1272px){
+.comentario{
+  width: 95%;
+}
+
+/*todo el div*/
+header div{
+  font-size: 30px;
+  order:1;
+  width: 18%;
+}
+header nav{    
+  order:2;
+  width: 100%;
+
+}
+footer{
+  flex-direction:column wrap;
+  height: 130px;
+  align-content: center;
+
+}
+footer nav{    
+
+  order:1;
+  width: 100%;
+  display: flex;
+}
+footer enlaces a img{    
+  height: 40px;
+  width: 60px;
+}
+footer div{    
+
+order:2;  
+width: 100%;
+
+}
+#contenedorPal{flex-direction:column;}
+#contenedorPal article{
+
+  order:1;
+  width:auto
+}
+#contenedorPal section{
+
+  flex-direction:column;
+
+  order:1;
+  width:auto
+}
+    
+  /*cas 04.12.15*/
+
+  .ca-menu{
+    width:100%;
+    flex-direction:row;
+    transition: all 0.4s;
+  }
+  .ca-menu li {
+    width:100% !important;
+    flex-flown:row wrap;
+    box-sizing:border-box;
+  }
+/*añadido 11/12/15*/
+  #divHam ul {
+    border-radius: 0 0 5px 5px;
+    left: 0;
+    margin: 0;
+    opacity: 0; /* no son visibles */
+    position: absolute;
+    top: 40px; /* se ubican debajo del enlace principal */
+    /* el color de fondo */
+    background: #222;
+    background: -moz-linear-gradient(#222,#555);
+    background: -webkit-linear-gradient(#22,#555);
+    background: -o-linear-gradient(#222,#555);
+    background: -ms-linear-gradient(#222,#555);
+    background: linear-gradient(#222,#555);
+
+    transition: opacity .25s ease .1s;
+  }
+  /* son visibes al poner el cursor encima */
+   #divHam li:hover > ul { opacity: 1; }
+/*fin añadido 11/12/15*/
+}
+
+/*mobil*/
+/*posicionamiento en columnas cuando wrap is true*/
+@media screen and (max-width: 480px){
+
+header div{
+
+  order:1;
+  width: 100%;
+}
+  header nav{    
+
+  order:2;
+
+  width: 100%;
+
+}
+footer{
+  flex-direction:column wrap;
+  height: 130px;
+  align-content: center;
+
+}
+footer enlaces{    
+
+  order:1;
+  width: 100%;
+  display: flex;
+}
+footer enlaces a img{    
+  height: 40px;
+  width: 60px;
+}
+footer div{    
+
+order:2;  
+width: 100%;
+
+}
+#contenedorPal{flex-direction:column;}
+#contenedorPal article{
+
+  order:1;
+  width:auto
+}
+#contenedorPal section{
+
+  flex-direction:column;
+
+  order:1;
+  width:auto
+}
+#searchbox{
+  width:45vW !important;
+}
+#submit{
+  width:19% !important;
+}
+#submit2{
+    width:19% !important;
+}
+
+}
+/*medias tablet*/
+@media screen and (max-width: 767px){
+  .hamburguesa{
+      display: flex !important;
+      font-size: 40px;
+      justify-content: center;
+      align-items: center;
+      width: 40px;
+      height: 40px;
+      padding: 10px;
+      margin-right: 15px;
+      font-family: 'WebSymbolsRegular', cursive;
+      text-shadow: 1.2px 1.2px 0px #424242;
+      color: #2e5ba2;
+  }
+  #menu{
+    display: none;
+    padding: 0;
+    margin:0;
+  }
+  .ca-menu{
+    flex-direction:column !important;
+  }
+  header div{
+    width: 65px;
+  }
+}
+/*medias mov*/
+@media screen and (max-width: 580px){
+  #searchbox{
+    flex-wrap:nowrap;
+    width:60vW;
+  }
+  #foot{
+    text-align: center;
+  }
+}
+
+
+
+/*******JOSU*************/
+
+/***MenuHeader*****/
+
+.ca-menu{
+    display: flex;
+    flex-flow: row;
+    margin:0px;
+}
+.ca-menu li{
+    width: 169px;
+    height: 59px;
+    background: #212124;
+    transition: all 300ms ease-in-out;
+    display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;z
+}
+
+.ca-menu li:last-child{
+    margin-bottom: 0px;
+}
+.ca-menu li a{
+    text-align: left;
+    display: block;
+    height: 100%;
+    color: #5A5A5A;
+    position: relative;
+    margin: 0 12px 0px 11px;
+    width: 46px;
+}
+.ca-icon{
+    font-size: 35px;
+    text-shadow: 0px 0px 1px #333;
+    position: absolute;
+    width: 76px;
+    text-align: center;
+    transition: all 300ms linear;
+    font-family: 'WebSymbolsRegular', cursive;
+}
+.ca-main{
+  font-size: 1.1Vw;
+    transition: all 300ms linear;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    text-shadow: 0px 1px 1px #000000;
+}
+.ca-menu li:hover{
+    background-color: #1A2653;
+  border-bottom: 5px solid #3175E0;
+}
+.ca-menu li:hover .ca-icon{
+  color: #000000;
+    font-size: 6Vw;
+    opacity: 0.4;
+    left: -1Vw;
+    transform: rotate(20deg);
+}
+.ca-menu li:hover .ca-main{
+    color: #5A5A5A;
+    opacity: 0.8;
+}
+.ca-menu li:hover .ca-sub{
+    color: #fff;
+    opacity: 0.8;
+}
+.ca-text{
+    color: #B4B4B4;
+    font-family: 'Terminal Dosis', Arial, sans-serif;
+    order: 2;
+    z-index: 1;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 11px 0 0;
+    line-height: 64px;
+}
+
+/*HOVER IMAGENES, el estilo las cambia */
+
+.Hover{
+  -webkit-filter: grayscale(60%);
+  -moz-filter: grayscale(60%);
+  -o-filter: grayscale(60%);
+  -ms-filter: grayscale(60%);
+  filter: grayscale(60%);
+  opacity: 0.7;
+}
+.Hover2{
+  border: 5px rgba(44, 122, 188, 0.27) solid;
+  transition:all 0.4s;
+}
+
+.show{
+  display:flex !important;
+}
+
+/*ESTILO DEL RESUMEN DE LA PELI*/
+.resum{
+    margin: -3px 8% !important;
+    padding: 4px;
+    text-align: justify;
+    background-color: #3B3B3E;
+    z-index: 1;
+    border: 1px rgba(51, 51, 51, 0.54) solid;
+    box-shadow: 2px 1px 0px 1px #5A5A5A;
+}
+.contimg{
+  width:10%;
+}
